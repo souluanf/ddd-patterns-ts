@@ -1,10 +1,10 @@
 import EventHandlerInterface from "../../../@shared/event/event-handler.interface";
-import CustomerCreated1Event from "../customer-created-1.event";
+import CustomerCreatedEvent from "../customer-created.event";
 
 export default class EnviaConsoleLog1Handler
-  implements EventHandlerInterface<CustomerCreated1Event>
+  implements EventHandlerInterface<CustomerCreatedEvent>
 {
-  handle(event: CustomerCreated1Event): void {
+  handle(event: CustomerCreatedEvent): void {
     // tslint:disable-next-line:no-console
     console.log(`Esse é o primeiro console.log do evento: CustomerCreated`);
   }
